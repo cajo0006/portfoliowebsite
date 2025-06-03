@@ -73,7 +73,7 @@ nav {
 }
 /*******************body*********************/
 body {
-  font-family: "Georgia", serif;
+  font-family: "inter", serif;
   background-color: #f6f6ff;
   color: #555;
   text-align: center;
@@ -215,6 +215,173 @@ body {
   width: 55px; /* juster størrelsen efter behov */
   height: auto;
   margin-right: 30px;
+}
+/************ OM MIG *************/
+.om-mig-main {
+  font-family: "Inter", sans-serif;
+}
+.om-mig {
+  background-color: #f6f6ff;
+  padding: 60px 20px 40px;
+  text-align: center;
+}
+
+.om-mig h1 {
+  font-size: 36px;
+  font-family: inter;
+  color: #a3a37f;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+}
+
+.laes-mere-knap {
+  background-color: #f5dfdb;
+  color: #333;
+  font-size: 12px;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+/* tekst */
+.om-mig-intro {
+  background-color: #ece7c8;
+  padding: 90px 50px;
+  text-align: left;
+}
+
+.om-mig-tekst h2 {
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.om-mig-tekst p {
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.kamera-ikon {
+  display: block;
+  width: 300px;
+  margin: 10px auto 0;
+  margin-top: -90px;
+  opacity: 0.7;
+  align-self: center;
+}
+/*******tidslinjer*******/
+.erfaring {
+  background-color: #f6f6ff;
+  padding: 80px 40px;
+  text-align: left;
+}
+
+.erfaring h2 {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  letter-spacing: 0.5px;
+  margin-bottom: 3rem;
+}
+
+.timeline {
+  position: relative;
+  margin-left: 0;
+  padding-left: 0;
+  border-left: none;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  right: 8px;
+  width: 3px;
+  height: 100%;
+  background-color: #000;
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.timeline-item .content {
+  max-width: 75%;
+}
+
+.timeline-item p {
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: "Inter", sans-serif;
+}
+
+.timeline-item small {
+  color: #444;
+}
+
+.prik {
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 50%;
+  margin-left: 1rem;
+  margin-top: 5px;
+}
+/**** uddannelse baggrund *****/
+.timeline-uddannelse {
+  background-color: #f7dad6;
+  padding: 80px 40px;
+}
+.timeline {
+  text-align: left;
+}
+/*************hvadjegharlært******/
+.laert-af-1semester {
+  background-color: #f6f6ff;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.overskrift-boks {
+  background-color: #f6e9dd;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.overskrift-boks h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000;
+  line-height: 1.4;
+}
+
+.bog-ikon img {
+  max-width: 300px;
+  height: auto;
+}
+
+.tekstboks {
+  text-align: left;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.tekstboks p {
+  margin-bottom: 1rem;
 }
 
 /* Desktop */
