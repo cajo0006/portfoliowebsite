@@ -153,7 +153,7 @@ body {
 /*****************pink frame*********/
 .pink-frame {
   background-color: #f7dad6;
-  padding: 6rem;
+  padding: 3rem;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   grid-template-rows: 1fr auto 1fr;
@@ -254,6 +254,7 @@ body {
   background-color: #ece7c8;
   padding: 90px 50px;
   text-align: left;
+  line-height: 1.5;
 }
 
 .om-mig-tekst h2 {
@@ -321,7 +322,7 @@ body {
 
 .timeline-item p {
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.6;
   font-family: "Inter", sans-serif;
 }
 
@@ -394,5 +395,52 @@ body {
 
   .circle-behind h1 {
     font-size: 90px;
+  }
+}
+/********** DESKTOP VISNING **********/
+@media (min-width: 800px) {
+  .om-mig {
+    padding: 100px 20px 60px;
+  }
+
+  .om-mig-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .om-mig-tekst {
+    max-width: 350px;
+    line-height: 1.5;
+  }
+
+  .kamera-ikon {
+    margin-top: 0;
+    width: 450px;
+    opacity: 0.7;
+  }
+
+  .erfaring-og-uddannelse-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .erfaring,
+  .timeline-uddannelse {
+    flex: 1;
+    padding: 80px 60px;
+  }
+
+  .erfaring h2,
+  .timeline-uddannelse h2 {
+    text-align: center;
+  }
+
+  .laert-af-1semester {
+    padding: 6rem 2rem;
   }
 }
