@@ -250,7 +250,7 @@ body {
 .laes-mere-knap {
   background-color: #f5dfdb;
   color: #333;
-  font-size: 12px;
+  font-size: 18px;
   width: 60px;
   height: 60px;
   margin: 0 auto;
@@ -260,6 +260,8 @@ body {
   justify-content: center;
   line-height: 1.2;
   font-weight: 500;
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
 }
 
 /* tekst */
@@ -417,7 +419,9 @@ html {
   letter-spacing: 16px;
   color: #000000;
 }
-
+.vertical-text {
+  display: none;
+}
 .portfolio-image {
   width: 250px;
   height: auto;
@@ -450,6 +454,7 @@ html {
   gap: 1rem;
   align-items: center;
   margin-top: 2rem;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .tema-knap {
@@ -544,12 +549,12 @@ html {
 .tema-loesning-knap {
   background-color: #f5dfdb;
   color: #6a6042;
-  font-size: 12px;
+  font-size: 18px;
   padding: 10px 20px;
   border-radius: 30px;
   display: inline-block;
   margin: 10px auto 30px;
-  font-family: "Inter", sans-serif;
+  font-family: "Courier New", Courier, monospace;
   font-weight: 500;
   border: 1px solid #c2bfa5;
   text-decoration: none;
@@ -558,7 +563,7 @@ html {
   background-color: #ecd6d2;
 }
 
-/************** Desktop ***********/
+/************** DESKTOP VISNING FORSIDE ***********/
 @media (min-width: 800px) {
   .link-boxes {
     flex-direction: row;
@@ -570,7 +575,7 @@ html {
     font-size: 90px;
   }
 }
-/********** DESKTOP VISNING **********/
+/********** DESKTOP VISNING OM MIG **********/
 @media (min-width: 800px) {
   .om-mig {
     padding: 100px 20px 60px;
@@ -612,12 +617,36 @@ html {
   .timeline-uddannelse h2 {
     text-align: center;
   }
-
   .laert-af-1semester {
-    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: left;
+    padding: 4rem 2rem;
   }
-}
-@media (min-width: 800px) {
+
+  .laert-indhold {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .bog-ikon {
+    flex: 1;
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    margin-left: 170px;
+  }
+
+  .tekstboks {
+    flex: 1;
+    max-width: 500px;
+  }
   .om-mig-wrapper {
     flex-direction: row;
     justify-content: center;
@@ -634,10 +663,137 @@ html {
   }
 
   .portraet-billede {
-    width: 300px; /* juster efter behov */
+    width: 350px;
   }
 
   .laes-mere-knap {
     margin-top: 40px;
+    width: 80px;
+    height: 70px;
+    font-size: 20px;
+    font-family: "Courier New", Courier, monospace;
+  }
+}
+/***************DESKTOP VISNING PORTFOLIO**************/
+
+@media (min-width: 800px) {
+  .portfolio-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 60px 80px;
+  }
+
+  .portfolio-image {
+    max-width: 300px;
+    height: auto;
+    margin-left: 1px;
+  }
+
+  .portfolio-main {
+    max-width: 500px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .portfolio-main .intro h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #a3a37f;
+  }
+
+  .portfolio-main .intro p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .tema-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-top: 2rem;
+    min-width: 120px;
+    padding: 12px 0px;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  .vertical-text {
+    position: absolute;
+    top: 200px;
+    font-size: 20px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: 18px;
+    display: block;
+  }
+}
+
+.vertical-text:first-of-type {
+  left: 50px;
+}
+
+.vertical-text:last-of-type {
+  right: 50px;
+}
+@media (min-width: 800px) {
+  .tema {
+    position: relative;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 80px 60px;
+    text-align: left;
+  }
+
+  .tema .tema-header {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  .tema .tema-nummer {
+    font-size: 100px;
+    font-weight: lighter;
+    color: #a3a37f;
+    line-height: 1;
+  }
+
+  #tema1 h2 {
+    font-size: 32px;
+    font-weight: 400;
+    font-family: "inter", serif;
+    margin-bottom: 10px;
+  }
+
+  #tema1 .tema-beskrivelse {
+    max-width: 600px;
+  }
+
+  #tema1 .tema-citat img {
+    width: 200%;
+    margin-bottom: -150px;
+  }
+
+  #tema1 .tema-citat p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    font-size: 13px;
+    font-style: italic;
+    text-align: center;
+    color: #000;
+  }
+  .tema-loesning-knap {
+    display: block;
+    margin: 20px auto 40px;
+    text-align: center;
+    width: 190px;
   }
 }
