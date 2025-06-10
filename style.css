@@ -61,7 +61,6 @@ body {
   color: #555;
   text-align: center;
 }
-
 /********************* FORSIDE *************/
 .forside {
   padding: 40px 20px;
@@ -752,16 +751,17 @@ html {
 
 #tema1 .tema-citat img {
   width: 200%;
-  margin-bottom: -150px;
+  margin-bottom: -140px;
 }
 
 #tema1 .tema-citat p {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   width: 70%;
   font-size: 13px;
   font-style: italic;
+  font-weight: lighter;
   text-align: center;
   color: #000;
 }
